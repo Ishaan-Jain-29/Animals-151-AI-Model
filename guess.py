@@ -1,8 +1,5 @@
 import tensorflow as tf
-import time
 import matplotlib.image as mpimg
-
-# import matplotlib.pyplot as plt
 
 class_names_translated = {
     "equus-quagga": "Plains Zebra",
@@ -323,10 +320,6 @@ def guess(filepath):
     index = probs.argmax()
     title = class_names_translated[class_names[index]]
     return title
-    # plt.imshow(img)
-    # plt.title(title)
-    # plt.axis(False)
-
 
 print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
